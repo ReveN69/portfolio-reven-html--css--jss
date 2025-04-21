@@ -44,7 +44,7 @@ nav {
 }
 
 a {
-    color: black;
+    color: rgb(109, 101, 101);
     text-decoration: none;
     text-decoration-color: white;
     }
@@ -87,7 +87,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: rgb(114, 107, 107);
     transition: all 0.3 ease-in-out;
 }
 
@@ -231,7 +231,7 @@ section {
 }
 .btn-color-1, .btn-color-2:hover {
     background: rgb(53,53,53);
-    color: white;
+    color: rgb(218, 211, 211);
 }
 
 .btn-color-1:hover {
@@ -240,6 +240,7 @@ section {
 
 .btn-color-2 {
     background: none;
+    color:rgb(148, 148, 148);
 }
 .btn-color-2:hover {
     border: rgb(255,255,255) 0.1rem solid;
@@ -283,7 +284,7 @@ section {
 .details-container {
     padding: 1.5rem;
     flex:1;
-    background: white;
+    background:none;
     border-radius:2rem;
     border: rgb(53,53,53) 0.1rem solid;
     border-color: rgb(163,163,163);
@@ -308,7 +309,7 @@ section {
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
+    color: rgb(138, 138, 138);
     font-weight:600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -348,7 +349,7 @@ article.icon {
 
 .color-container {
     border-color: rgb(163,163,163);
-    background: rgb(255,255,255);
+    background:none;
 }
 
 .project-img {
@@ -359,11 +360,11 @@ article.icon {
 
 .project-title {
     margin:1rem;
-    color: black;
+    color: rgb(165, 165, 165);
 }
 
 .project-btn {
-    color: black;
+    color: rgb(153, 153, 153);
     border-color: rgb(163,163,163);
 }
 
@@ -375,7 +376,7 @@ article.icon {
 
 .color-container {
     border-color: rgb(163,163,163);
-    background: rgb(255,255,255);
+    background: none;
 }
 
 .project-img {
@@ -386,11 +387,11 @@ article.icon {
 
 .project-title {
     margin:1rem;
-    color: black;
+    color: rgb(155, 155, 155);
 }
 
 .project-btn {
-    color: black;
+    color: rgb(155, 155, 155);
     border-color: rgb(163,163,163);
 }
 
@@ -447,3 +448,97 @@ footer p {
 
 /* DARK MODE*/
 
+:root {
+    --bg-color: #ffffff;
+    --text-color: #9e9e9e;
+    --slider-bg: #e0e0e0;
+    --toggle-bg: #ffffff;
+  }
+  
+  .dark-theme {
+    --bg-color: #1f1e1e;
+    --text-color: #ffffff;
+    --slider-bg: #444;
+    --toggle-bg: #222;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Switch container */
+  .theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+  }
+  
+  /* Hide the checkbox itself */
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider itself */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: var(--slider-bg);
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-color 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
+  
+  /* Icons inside the slider */
+  .icon {
+    font-size: 20px;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* The round knob of the switch */
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--toggle-bg);
+    transition: transform 0.4s ease;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  /* When the switch is turned on (checked) */
+  .theme-switch input:checked + .slider::before {
+    transform: translateX(36px);
+  }
+  
+  /* Change opacity of icons when toggling */
+  .theme-switch input:checked + .slider .sun {
+    opacity: 0.3;
+  }
+  .theme-switch input:checked + .slider .moon {
+    opacity: 1;
+  }
+  
+  .theme-switch input:not(:checked) + .slider .sun {
+    opacity: 1;
+  }
+  .theme-switch input:not(:checked) + .slider .moon {
+    opacity: 0.3;
+  }
+  
