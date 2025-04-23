@@ -1,3 +1,4 @@
+// HAMBURGER MENU BASIC TOGGLE MENU FROM TUTORIAL
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".hamburger-icon");
@@ -5,7 +6,7 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
-// Dark mode
+// DARK MODE AND LIGHT MODE
 const toggle = document.getElementById('theme-toggle');
 
 if (localStorage.getItem('theme') === 'dark') {
@@ -23,7 +24,7 @@ toggle.addEventListener('change', () => {
   }
 });
 
-// Share script copy link
+// SHARE SCRIPT FOR DRAWINGS
 
 async function copyArtLink(button) {
   const url = button.dataset.url;
@@ -31,18 +32,18 @@ async function copyArtLink(button) {
   try {
     await navigator.clipboard.writeText(url);
     
-    // Feedback visuel
-    button.innerHTML = '<i class="fas fa-check"></i> Copié !';
+// Visual feedback for copied link
+    button.innerHTML = '<i class="fas fa-check"></i> Copied !';
     button.classList.add('copied');
     
-    // Réinitialiser après 2 sec
+// Reinitializing after 2 seconds
     setTimeout(() => {
       button.innerHTML = '<i class="fas fa-share-alt"></i> Share';
       button.classList.remove('copied');
     }, 2000);
     
   } catch (err) {
-    button.textContent = 'Erreur :(';
-    console.error("Échec de la copie :", err);
+    button.textContent = 'Error :(';
+    console.error("Failed to copy :", err);
   }
 }
