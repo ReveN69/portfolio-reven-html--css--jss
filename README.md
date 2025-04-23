@@ -9,3 +9,5 @@ Props to the YouTube channel called How to Become a Developer: https://www.youtu
 6. Added some more details in the "alt" for my images to describe more accurately.
 7. Changed some basic colors to fit the dark mode and the light mode (mostly greyish variations)
 8. Replaced some logos for contacts such as Instagram, Steam and Github.
+
+link to my deployed website: www.revenx.netlify.app/
