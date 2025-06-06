@@ -112,6 +112,7 @@ a:hover {
     text-align: center;
     font-size: 1.5rem;
     color: #9A9AA7;
+    background-color: white;
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
@@ -122,6 +123,7 @@ a:hover {
 
 .menu-links.open {
     max-height: 300px;
+    z-index: 1000;
 }
 
 .hamburger-icon.open span:first-child {
@@ -173,6 +175,8 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    z-index: 1;
+    position: relative;
 }
 
 .section__text {

@@ -14,8 +14,7 @@
         display:none;
     }
     #hamburger-nav {
-        display: flex;
-        
+        display: flex;     
     }
     #experience, .experience-details-container {
         margin-top:2rem;
@@ -42,14 +41,14 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     #contact, footer {
         height: 40vh;
     }
     #profile {
         height: 83vh;
         margin-bottom: 0;
-        
+
     }
     article {
         font-size: 1rem;
