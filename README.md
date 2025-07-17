@@ -14,4 +14,4 @@ Changes to the original project:
 7. Changed some basic colors to fit the dark mode and the light mode (mostly greyish variations).
 8. Replaced some logos for contacts such as Instagram, Steam and Github.
 9. Added a normalize.css file for a more browser friendly experience.
-Link to my deployed website: https://revenx.netlify.app/
+Link to my deployed website: https://aysendraws.netlify.app/
