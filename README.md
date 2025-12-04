@@ -1,17 +1,28 @@
-Creating a guided portfolio project with some personal tweaks on the original project.
-List is down below.
-Props to the YouTube channel called How to Become a Developer: https://www.youtube.com/@howtobecomeadeveloper 
-The tutorial I have followed is this one: https://www.youtube.com/watch?v=ldwlOzRvYOU 
+Creating a guided portfolio project with some personal tweaks on the original YouTube project (static website one-pager).
 
 Changes to the original project:
 
-1. Added a very basic dark mode (toggle) with a possibility to go back to light mode.
-2. Added a share button for my drawings (copies the direct link for the img)
-3. Added a new section in addition to the original section (separating my drawings from coding projects)
-4. Added a hover effect for some buttons (zoom)
-5. Created a favicon with GIMP and implemented it.
-6. Added some more details in the "alt" for my images to describe more accurately.
-7. Changed some basic colors to fit the dark mode and the light mode (mostly greyish variations).
-8. Replaced some logos for contacts such as Instagram, Steam and Github.
-9. Added a normalize.css file for a more browser friendly experience.
-Link to my deployed website: https://aysendraws.netlify.app/
+1. Added a section for my drawings by using the integrated Instagram code.
+2. Added a new section in addition to the original section.
+3. Added a hover effect for some buttons (zoom)
+4. Created a favicon with GIMP and implemented it + small logo for the header.
+5. Added some more details in the "alt" for my images to describe more accurately.
+6. Replaced some logos for contacts such as Instagram, Steam and Github.
+8. Added a normalize.css file for a more browser friendly experience.
+9. Added an email contact with a secured email (mozilla)
+
+Next steps (when I'll have time and energy):
+
+1. Redesign the entire structure of the one-pager
+2. Implement the use of Figma and design my own and UX/UI
+3. Add a form for contact and a possibility to order commissions
+4. Add different sections for Pricing (commissions for example)
+5. Add a smooth gallery for all my drawings with an external link to the high-res picture
+6. Add some "modern" animations with JS by using React.js (not a priority).
+   
+Link to the live website: https://aysendraws.netlify.app/
+
+Credits:
+
+• YouTube channel called How to Become a Developer: https://www.youtube.com/@howtobecomeadeveloper 
+• I have followed this tutorial: https://www.youtube.com/watch?v=ldwlOzRvYOU 
